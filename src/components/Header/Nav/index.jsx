@@ -1,16 +1,17 @@
 import React from 'react';
+import droplistIcon from '../../../img/droplistIcon.svg';
 
 
 const menuList = [
-  { li: 'GAME', dropdown: false},
-  { li: 'CHAMPIONS', dropdown: false },
-  { li: 'NEWS', dropdown: true },
-  { li: 'PATCH NOTES', dropdown: false },
-  { li: 'DISCOVER', dropdown: true },
-  { li: 'ESPORTS', dropdown: false },
-  { li: 'UNIVERSE', dropdown: false },
-  { li: 'SHOP', dropdown: false },
-  { li: 'SUPPORT', dropdown: false }
+  { li: 'GAME', droplist: false},
+  { li: 'CHAMPIONS', droplist: false },
+  { li: 'NEWS', droplist: true },
+  { li: 'PATCH NOTES', droplist: false },
+  { li: 'DISCOVER', droplist: true },
+  { li: 'ESPORTS', droplist: false },
+  { li: 'UNIVERSE', droplist: false },
+  { li: 'SHOP', droplist: false },
+  { li: 'SUPPORT', droplist: false }
 ];
 
 class ListItem extends React.Component {
@@ -25,9 +26,23 @@ class ListItem extends React.Component {
   }
 
   render() {
-    return (
-      <a href=" " onClick={this.handleClick}>{this.props.li}</a>
-    );
+    if (this.props.menuList.droplist) {
+      return (
+        <a href=" " className={'nav__dropdown'} onClick={this.handleClick}>
+          {this.props.menuList.li}
+          <img className={'nav__droplist-icon'}
+            src={droplistIcon}
+            alt={'Droplist Menu'}
+          />
+        </a>
+      );
+    }
+
+    if (!this.props.menuList.droplist) {
+      return (
+        <a href=" " onClick={this.handleClick}>{this.props.menuList.li}</a>
+      );
+    }
   }
 }
 
@@ -38,7 +53,7 @@ class ListRender extends React.Component {
     this.props.menu.forEach(item => {
       list.push(
         <ListItem
-          li={item.li}
+          menuList={item}
           key={item.li} />
       );
     });

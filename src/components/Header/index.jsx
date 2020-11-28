@@ -7,8 +7,10 @@ class Header extends React.Component {
   render() {
     return (
       <header className={'header'}>
-        <Logo />
-        <Nav />
+        <div className={'header__left-side'}>
+          <Logo />
+          <Nav />
+        </div>
         <UserProfile />
       </header>
     );

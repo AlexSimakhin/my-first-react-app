@@ -3,23 +3,51 @@ import riotLogo from '../../../img/RiotGamesLogo.svg';
 import valorantLogo from '../../../img/ValorantLogo.svg';
 
 
-function CompanyLogo(props) {
-  return (
-    <img className="riot-games"
-      src={props.company.logoUrl}
-      alt={props.company.name}
-    />
-  );
-};
+class CompanyLogo extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-function GameLogo(props) {
-  return (
-    <img className="valorant"
-      src={props.game.logoUrl}
-      alt={props.game.name}
-    />
-  );
-};
+  handleClick(e) {
+    e.preventDefault();
+    console.log('По ссылке лого.');
+  }
+
+  render() {
+    return (
+      <a href=" " className={'riot-games'} onClick={this.handleClick}>
+        <img
+          src={this.props.company.logoUrl}
+          alt={this.props.company.name}
+        />
+      </a>
+    );
+  }
+}
+
+class GameLogo extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e) {
+    e.preventDefault();
+    console.log('По ссылке лого.');
+  }
+
+  render() {
+    return (
+      <a href=" " className={'valorant'} onClick={this.handleClick}>
+        <img
+          src={this.props.game.logoUrl}
+          alt={this.props.game.name}
+        />
+      </a>
+    );
+  }
+}
 
 const logos = {
   company: {
