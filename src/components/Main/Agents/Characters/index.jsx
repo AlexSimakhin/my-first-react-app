@@ -24,9 +24,43 @@ const Img = styled.div`
 
   &:hover {
     content: '';
+    background-position: -116px -60px;
     background-size: 215%;
   }
 `;
+
+const Skills = styled.div`
+  position: fixed;
+  z-index: 999;
+  align-self: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 75px;
+  width: inherit;
+  transform: translate(15px,15px);
+  background: #1F2326;
+  border: 1.3px solid #F8F8F8;
+
+  .skill {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+class CharSkills extends React.Component {
+  render() {
+    return (
+      <Skills>
+        <div className={'skill'}>1</div>
+        <div className={'skill'}>1</div>
+        <div className={'skill'}>1</div>
+        <div className={'skill'}>1</div>
+      </Skills>
+    );
+  }
+}
 
 class Character extends React.Component {
   render() {
@@ -35,6 +69,7 @@ class Character extends React.Component {
       <div className={'char-card'}>
         <h3>{this.props.characters[0].name}</h3>
         <p>{this.props.characters[0].nationality}</p>
+        <CharSkills />
         <Img url={url}></Img>
       </div>
     );

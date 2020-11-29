@@ -12,6 +12,7 @@
   min-width: 320px;
   height: 100%;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .header {
@@ -191,6 +192,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 80px 0 0;
 }
 
 .title {
@@ -226,14 +228,14 @@
 .char-card::after {
   content: '';
   position: absolute;
-    width: 1100%;
-    height: 1100%;
-    top: 20px;
-    left: -550%;
-    background: #1F2326;
-    transform-origin: 50% 0;
-    transform: rotate(-45deg);
-    z-index: -1;
+  width: 1100%;
+  height: 1100%;
+  top: 20px;
+  left: -550%;
+  background: #1F2326;
+  transform-origin: 50% 0;
+  transform: rotate(-45deg);
+  z-index: -1;
 }
 
 .char-card h3 {
