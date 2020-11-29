@@ -1,8 +1,15 @@
-@font-face {font-family: "Druk Wide Medium"; src: url("//db.onlinewebfonts.com/t/7e389c5e310dc537b083e0e25ea6eab5.eot"); src: url("//db.onlinewebfonts.com/t/7e389c5e310dc537b083e0e25ea6eab5.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7e389c5e310dc537b083e0e25ea6eab5.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7e389c5e310dc537b083e0e25ea6eab5.woff") format("woff"), url("//db.onlinewebfonts.com/t/7e389c5e310dc537b083e0e25ea6eab5.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7e389c5e310dc537b083e0e25ea6eab5.svg#Druk Wide Medium") format("svg"); }
-@font-face {font-family: "Druk Wide Bold"; src: url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.eot"); src: url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.woff") format("woff"), url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2206d6cc490084998d531e8c1b2cbb4a.svg#Druk Wide Bold") format("svg"); }
+@font-face {
+  font-family: 'Druk';
+  src: local('Druk'), 
+  url('./fonts/Druk-Wide-Medium.woff') format('woff'), 
+  url('./fonts/Druk-Wide-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
 
 #root {
   width: 100vw;
+  min-width: 320px;
   height: 100%;
   background-color: #fff;
 }
@@ -171,6 +178,8 @@
 }
 
 .section {
+  position: relative;
+  z-index: 2;
   height: 100%;
   display: flex;
   padding: 0 calc(16px + 66 * ((100vw - 320px) / (1920 - 320)));
@@ -188,9 +197,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  font-family: 'Druk Wide Bold', sans-serif;
-  font-size: 104px;
+  font: 500 104px 'Druk', sans-serif;
   line-height: 136px;
   letter-spacing: 0.1em;
 
@@ -199,6 +206,61 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(255, 255, 255);
 
-  /* transform-origin: 50% 50%; */
   transform: rotateZ(90deg);
 }
+
+.char-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.char-card {
+  position: relative;
+  display: flex;
+  width: 300px;
+  height: 667px;
+  overflow: hidden;
+}
+
+.char-card::after {
+  content: '';
+  position: absolute;
+    width: 1100%;
+    height: 1100%;
+    top: 20px;
+    left: -550%;
+    background: #1F2326;
+    transform-origin: 50% 0;
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+
+.char-card h3 {
+  position: fixed;
+  z-index: 9;
+
+  font: 500 48px 'Druk', sans-serif;
+  line-height: 136px;
+  letter-spacing: 0.1em;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  
+  transform: translate(-48%, 100%) rotateZ(90deg);
+}
+
+.char-card p {
+  position: absolute;
+  z-index: 8;
+
+  font: 500 16px 'Druk', sans-serif;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  color: #FF4656;
+
+  transform: translate(-27%, 580%) rotateZ(90deg);
+}
+
