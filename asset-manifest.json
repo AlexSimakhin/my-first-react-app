@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/my-first-react-app/static/css/main.65c63596.chunk.css",
-    "main.js": "/my-first-react-app/static/js/main.afa5e5b2.chunk.js",
-    "main.js.map": "/my-first-react-app/static/js/main.afa5e5b2.chunk.js.map",
-    "runtime-main.js": "/my-first-react-app/static/js/runtime-main.f010f03f.js",
-    "runtime-main.js.map": "/my-first-react-app/static/js/runtime-main.f010f03f.js.map",
-    "static/js/2.db0ed98a.chunk.js": "/my-first-react-app/static/js/2.db0ed98a.chunk.js",
-    "static/js/2.db0ed98a.chunk.js.map": "/my-first-react-app/static/js/2.db0ed98a.chunk.js.map",
-    "static/js/3.ec560609.chunk.js": "/my-first-react-app/static/js/3.ec560609.chunk.js",
-    "static/js/3.ec560609.chunk.js.map": "/my-first-react-app/static/js/3.ec560609.chunk.js.map",
+    "main.css": "/my-first-react-app/static/css/main.f3d34b54.chunk.css",
+    "main.js": "/my-first-react-app/static/js/main.7c7f809e.chunk.js",
+    "main.js.map": "/my-first-react-app/static/js/main.7c7f809e.chunk.js.map",
+    "runtime-main.js": "/my-first-react-app/static/js/runtime-main.5ab6e0a8.js",
+    "runtime-main.js.map": "/my-first-react-app/static/js/runtime-main.5ab6e0a8.js.map",
+    "static/js/2.b7971b13.chunk.js": "/my-first-react-app/static/js/2.b7971b13.chunk.js",
+    "static/js/2.b7971b13.chunk.js.map": "/my-first-react-app/static/js/2.b7971b13.chunk.js.map",
+    "static/js/3.e4f6b7fd.chunk.js": "/my-first-react-app/static/js/3.e4f6b7fd.chunk.js",
+    "static/js/3.e4f6b7fd.chunk.js.map": "/my-first-react-app/static/js/3.e4f6b7fd.chunk.js.map",
     "index.html": "/my-first-react-app/index.html",
-    "static/css/main.65c63596.chunk.css.map": "/my-first-react-app/static/css/main.65c63596.chunk.css.map",
-    "static/js/2.db0ed98a.chunk.js.LICENSE.txt": "/my-first-react-app/static/js/2.db0ed98a.chunk.js.LICENSE.txt",
+    "static/css/main.f3d34b54.chunk.css.map": "/my-first-react-app/static/css/main.f3d34b54.chunk.css.map",
+    "static/js/2.b7971b13.chunk.js.LICENSE.txt": "/my-first-react-app/static/js/2.b7971b13.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/my-first-react-app/static/media/background-img.03df42f7.png",
     "static/media/RiotGamesLogo.1422e278.svg": "/my-first-react-app/static/media/RiotGamesLogo.1422e278.svg",
     "static/media/UserAvatar.30cb3334.png": "/my-first-react-app/static/media/UserAvatar.30cb3334.png",
     "static/media/ValorantLogo.3b326306.svg": "/my-first-react-app/static/media/ValorantLogo.3b326306.svg",
-    "static/media/App.css": "/my-first-react-app/static/media/background-img.03df42f7.png",
-    "static/media/droplistIcon.af504d5b.svg": "/my-first-react-app/static/media/droplistIcon.af504d5b.svg"
+    "static/media/droplistIcon.af504d5b.svg": "/my-first-react-app/static/media/droplistIcon.af504d5b.svg",
+    "static/media/phoenix.1c7573e2.png": "/my-first-react-app/static/media/phoenix.1c7573e2.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f010f03f.js",
-    "static/js/2.db0ed98a.chunk.js",
-    "static/css/main.65c63596.chunk.css",
-    "static/js/main.afa5e5b2.chunk.js"
+    "static/js/runtime-main.5ab6e0a8.js",
+    "static/js/2.b7971b13.chunk.js",
+    "static/css/main.f3d34b54.chunk.css",
+    "static/js/main.7c7f809e.chunk.js"
   ]
 }
